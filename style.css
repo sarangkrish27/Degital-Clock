@@ -100,3 +100,27 @@ body{
 #sec::after{
     content: 'SECONDS';
 }
+@media (max-width:600px) {
+    .container{
+        width: 95vw;
+        height: 20vh;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .clock span{
+        font-size: 60px;
+        width: 110px;
+        display: inline-block;
+        text-align: center;
+        position: relative;
+    }
+    .clock span::after{
+        font-size: 11px;
+        position: absolute;
+        bottom: -5px;
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
